@@ -68,6 +68,12 @@ flutter:
      - Asset/Last.png
      - Asset/Start_up.png
      - Asset/logo.png
+     - Asset/fb.png
+     - Asset/ap.png
+     - Asset/apple.png
+     - Asset/go.png
+     - Asset/f.png
+     - Asset/man.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

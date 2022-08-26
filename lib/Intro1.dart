@@ -44,7 +44,7 @@ class _Intro_1State extends State<Intro_1> {
                     ),
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Get_Started()));
+                          MaterialPageRoute(builder: (context) => Start_Up()));
                     },
                   )),
             ),

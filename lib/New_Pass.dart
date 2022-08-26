@@ -18,6 +18,9 @@ class _New_PassState extends State<New_Pass> {
         child: ListView(
           children: [
             Container(
+              height: 100.h,
+              width: 100.w,
+              color: Color(0xFFE8E8E6),
               child: Stack(
                 children: [
                   Container(

@@ -26,7 +26,7 @@ class _Login_pageState extends State<Login_page> {
           Container(
             height: 100.h,
             width: 100.w,
-            color: Color(0xFFE8E8E6),
+            color: Color(0xFFF1F1EF),
             child: Stack(
               children: [
                 Container(

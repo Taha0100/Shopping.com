@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:shoping/Product_Add.dart';
 import 'package:sizer/sizer.dart';
 
-class Watches extends StatefulWidget {
-  const Watches({Key? key}) : super(key: key);
+import 'Product_Add.dart';
+
+class Clothes extends StatefulWidget {
+  const Clothes({Key? key}) : super(key: key);
 
   @override
-  _WatchesState createState() => _WatchesState();
+  _ClothesState createState() => _ClothesState();
 }
 
-class _WatchesState extends State<Watches> {
+class _ClothesState extends State<Clothes> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,14 +26,6 @@ class _WatchesState extends State<Watches> {
                 Container(
                   child: Column(
                     children: [
-                      Container(
-                        margin: EdgeInsets.only(top: 4.h, right: 60.w),
-                        child: Text(
-                          'Bags',
-                          style: TextStyle(
-                              fontSize: 23, fontWeight: FontWeight.w700),
-                        ),
-                      ),
                       InkWell(
                         onTap: () {
                           Navigator.push(
@@ -54,7 +47,7 @@ class _WatchesState extends State<Watches> {
                                 Container(
                                   height: 14.h,
                                   width: 34.w,
-                                  child: Image.asset("Asset/bag.png"),
+                                  child: Image.asset("Asset/cothes.png"),
                                 ),
                                 Container(
                                   child: Column(
@@ -133,7 +126,7 @@ class _WatchesState extends State<Watches> {
                                 Container(
                                   height: 14.h,
                                   width: 34.w,
-                                  child: Image.asset("Asset/bag.png"),
+                                  child: Image.asset("Asset/cothes.png"),
                                 ),
                                 Container(
                                   child: Column(
@@ -212,7 +205,7 @@ class _WatchesState extends State<Watches> {
                                 Container(
                                   height: 14.h,
                                   width: 34.w,
-                                  child: Image.asset("Asset/bag.png"),
+                                  child: Image.asset("Asset/cothes.png"),
                                 ),
                                 Container(
                                   child: Column(
@@ -291,7 +284,7 @@ class _WatchesState extends State<Watches> {
                                 Container(
                                   height: 14.h,
                                   width: 34.w,
-                                  child: Image.asset("Asset/bag.png"),
+                                  child: Image.asset("Asset/cothes.png"),
                                 ),
                                 Container(
                                   child: Column(
@@ -370,7 +363,7 @@ class _WatchesState extends State<Watches> {
                                 Container(
                                   height: 14.h,
                                   width: 34.w,
-                                  child: Image.asset("Asset/bag.png"),
+                                  child: Image.asset("Asset/cothes.png"),
                                 ),
                                 Container(
                                   child: Column(
@@ -449,7 +442,7 @@ class _WatchesState extends State<Watches> {
                                 Container(
                                   height: 14.h,
                                   width: 34.w,
-                                  child: Image.asset("Asset/bag.png"),
+                                  child: Image.asset("Asset/cothes.png"),
                                 ),
                                 Container(
                                   child: Column(

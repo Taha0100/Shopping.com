@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
+import 'ButtomBar.dart';
 import 'Forget_Pass.dart';
 import 'Home_Page.dart';
 import 'Sign_Up_Page.dart';
@@ -105,7 +106,7 @@ class _Login_pageState extends State<Login_page> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => Home_PAge()));
+                                        builder: (context) => bottombar()));
                                 print(emailController.text);
                               },
                             )),
@@ -141,7 +142,8 @@ class _Login_pageState extends State<Login_page> {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => Sign_Up_Page()));
+                                          builder: (context) =>
+                                              Sign_Up_Page()));
                                 },
                                 child: Text(
                                   "Sign in",

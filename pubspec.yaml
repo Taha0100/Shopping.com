@@ -36,6 +36,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   sizer: ^2.0.15
   intl_phone_number_input: ^0.7.0+2
+  badges: ^2.0.3
+  form_validation: ^2.1.0+12
+  email_validator: ^2.1.17
+  image_picker: ^0.8.5+3
+  path_provider: ^2.0.11
+  animated_bottom_navigation_bar: ^1.1.0
 
 
 dev_dependencies:
@@ -81,7 +87,11 @@ flutter:
      - Asset/cothes.png
      - Asset/clothes.png
      - Asset/bag.png
-
+     - Asset/counter.png
+     - Asset/plus.png
+     - Asset/shirt.png
+     - Asset/shoes.png
+     - Asset/cc.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

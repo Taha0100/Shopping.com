@@ -52,7 +52,7 @@ class _New_PassState extends State<New_Pass> {
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 labelText: 'New Password',
-                                labelStyle: TextStyle(color: Colors.grey)
+                                labelStyle: TextStyle(color: Colors.grey),
                             ),
                           ),
                         ),

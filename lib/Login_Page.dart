@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:shoping/constants.dart';
 import 'package:sizer/sizer.dart';
 
 import 'ButtomBar.dart';
 import 'Forget_Pass.dart';
-import 'Home_Page.dart';
 import 'Sign_Up_Page.dart';
 
 class Login_page extends StatefulWidget {
@@ -16,6 +16,7 @@ class Login_page extends StatefulWidget {
 
 TextEditingController emailController = TextEditingController();
 TextEditingController passController = TextEditingController();
+bool isLanguage = false;
 
 class _Login_pageState extends State<Login_page> {
   @override
@@ -25,7 +26,7 @@ class _Login_pageState extends State<Login_page> {
       child: ListView(
         children: [
           Container(
-            height: 100.h,
+            height: 110.h,
             width: 100.w,
             color: Color(0xFFF1F1EF),
             child: Stack(
@@ -34,9 +35,35 @@ class _Login_pageState extends State<Login_page> {
                   child: Column(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(top: 6.h, right: 55.w),
+                        width: 55.w,
+                        height: 5.h,
+                        child: ElevatedButton(
+                            onPressed: () {
+                              setState(() {
+                                isLanguage = !isLanguage;
+                              });
+                            },
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              primary: Color(0xFFFD7922),
+                              onPrimary: Color(0xFFFD7922),
+                            ),
+                            child: Row(
+                              children: [
+                                Text("Change Language",style: TextStyle(color: Colors.white),),
+                                SizedBox(
+                                  width: 3.w,
+                                ),
+                                Icon(Icons.change_circle_outlined,color: Colors.white,)
+                              ],
+                            )),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(top: 6.h, right: 40.w),
                         child: Text(
-                          "Login",
+                          isLanguage == true ? tit : tit1,
                           style:
                               TextStyle(fontSize: 30, color: Color(0xFFFD7922)),
                         ),
@@ -48,7 +75,7 @@ class _Login_pageState extends State<Login_page> {
                       Container(
                         margin: EdgeInsets.only(top: 6.h, right: 39.w),
                         child: Text(
-                          "Welcome Back",
+                          isLanguage == true ? back : back1,
                           style: TextStyle(color: Colors.grey, fontSize: 20),
                         ),
                       ),
@@ -63,7 +90,8 @@ class _Login_pageState extends State<Login_page> {
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            labelText: 'Username/Phone number ',
+                            labelText:
+                                isLanguage == true ? username : username1,
                             labelStyle: TextStyle(color: Colors.grey),
                           ),
                         ),
@@ -79,20 +107,21 @@ class _Login_pageState extends State<Login_page> {
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            labelText: 'Password',
+                            labelText:
+                                isLanguage == true ? passward : passward1,
                             labelStyle: TextStyle(color: Colors.grey),
                           ),
                         ),
                       ),
                       Container(
                         child: Container(
-                            margin: EdgeInsets.only(top: 20.h, left: 2.5.w),
+                            margin: EdgeInsets.only(top: 15.h, left: 2.5.w),
                             height: 6.h,
                             width: 95.w,
                             padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                             child: ElevatedButton(
                               child: Text(
-                                'Login',
+                                isLanguage == true ? log : log1,
                                 style: TextStyle(color: Colors.white),
                               ),
                               style: ElevatedButton.styleFrom(
@@ -121,7 +150,7 @@ class _Login_pageState extends State<Login_page> {
                                     builder: (context) => Forget_Pass()));
                           },
                           child: Text(
-                            "Forget Password?",
+                            isLanguage == true ? forget : forget1,
                             style: TextStyle(
                                 color: Colors.grey,
                                 fontWeight: FontWeight.w300),
@@ -134,7 +163,9 @@ class _Login_pageState extends State<Login_page> {
                           children: [
                             Container(
                               child: Center(
-                                child: Text('Don’t have an account?'),
+                                child: Text(isLanguage == true
+                                    ? noAccount
+                                    : noAccount1),
                               ),
                             ),
                             TextButton(
@@ -146,7 +177,7 @@ class _Login_pageState extends State<Login_page> {
                                               Sign_Up_Page()));
                                 },
                                 child: Text(
-                                  "Sign in",
+                                  isLanguage == true ? In : In1,
                                   style: TextStyle(color: Color(0xFFFD7922)),
                                 ))
                           ],

@@ -24,7 +24,7 @@ class _Home_PAgeState extends State<Home_PAge> {
           child: Stack(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 7.h, left: 75.w),
+                margin: EdgeInsets.only(top: 4.h, left: 75.w),
                 height: 8.h,
                 width: 16.w,
                 decoration: BoxDecoration(
@@ -38,14 +38,14 @@ class _Home_PAgeState extends State<Home_PAge> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 11.h, left: 5.w),
+                margin: EdgeInsets.only(top: 9.h, left: 5.w),
                 child: Text(
                   'Welcome, Mr Ali',
                   style: TextStyle(fontSize: 27, fontWeight: FontWeight.w700),
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 17.h, left: 5.w),
+                margin: EdgeInsets.only(top: 14.h, left: 5.w),
                 child: Text(
                   'A one click shopping place where you find all your\nfavourite brands.',
                   style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300),
